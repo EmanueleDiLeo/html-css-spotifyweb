@@ -26,6 +26,15 @@ span{
   border: 1px solid red;
 }
 
+.overflow-y{
+  overflow-y: auto;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* **********************************MAIN********************************** */
 
 main{
@@ -36,14 +45,16 @@ main{
 
 /* ******************************************Bar-left **************/
 #bar-left{
-  height: 100%;
+  height: calc(100vh - 90px);
   width: 225px;
   background-color: black;
+
 }
 
 /* **************************************** Menu */
 .menu{
   height: calc(100% - 90px);
+  overflow-y: auto;
 }
 
 .menu li:hover{
@@ -75,14 +86,12 @@ main{
   color:white;
 }
 
-.profile{
-  height: 90px;
-}
-
 /* ****************************************Playlist */
  
 .playlist{
+  height: 310px;
   padding: 20px 0 0 20px;
+  overflow-y: auto;
 }
 
 .center{
@@ -114,8 +123,37 @@ main{
   background-color: white;
 }
 
-.center:hover .create{
+.center:hover .hw,
+.app:hover .hw{
   color: white;
+}
+
+/***************************************** Profile  */
+.profile{
+  height: 90px;
+
+}
+
+.app{
+  padding:10px 20px;
+}
+
+.app img{
+  width: 10px;
+}
+
+.name{
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.name img{
+  width: 25px;
+  height: 25px;
+  background-color: #6a6c71;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 /* ********************************************* BAR-RIGHT************/
@@ -141,12 +179,6 @@ main{
   height:100%;
   padding-top: 100px;
 }
-
-
-
-
-
-
 
 /* *********************************FOOTER********************************* */
 
