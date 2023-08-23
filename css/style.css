@@ -46,6 +46,15 @@ main{
   height: calc(100% - 90px);
 }
 
+.menu li:hover{
+  color:white;
+}
+
+.menu li{
+  cursor: pointer;
+  padding: 5px 0;
+}
+
 .logo{
   margin: 20px;
   width: 130px;
@@ -56,13 +65,14 @@ main{
   width: 20px;
 }
 
-#bar-left li{
-  padding: 5px 0 5px 20px;
+.home li{
+  padding-left: 20px;
   display:block;
 }
 
 .home ul li:first-child{
   border-left: 3px  #adff2f solid;
+  color:white;
 }
 
 .profile{
@@ -70,11 +80,43 @@ main{
 }
 
 /* ****************************************Playlist */
-
+ 
 .playlist{
   padding: 20px 0 0 20px;
 }
 
+.center{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.create{
+  font-size: 1.1rem;
+  padding-left: 10px;
+}
+
+.plus{
+  text-align: center;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 10px 0;
+  background-color:#6a6c71;
+}
+
+.plus span{
+  font-size: 2rem;
+  color:black;
+}
+
+.center:hover .plus{
+  background-color: white;
+}
+
+.center:hover .create{
+  color: white;
+}
 
 /* ********************************************* BAR-RIGHT************/
 #bar-right{
