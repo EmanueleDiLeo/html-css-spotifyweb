@@ -8,18 +8,52 @@
 
 /* **********************************UTILITY******************************* */
 
-
+.debug{
+  border: 1px solid red;
+}
 
 
 
 /* **********************************MAIN********************************** */
 
+main{
+  height: calc(100vh - 90px);
+  background-color: #141922;
+  display: flex;
+}
 
+/* ******************************************Bar-left */
+#bar-left{
+  height: 100%;
+  width: 225px;
+  background-color: black;
+}
 
+.menu{
+  height: calc(100% - 90px);
+}
+
+.profile{
+  height: 90px;
+}
+
+/* *****************************************BAR-TOP */
+
+#bar-top{
+  background-color: rgb(8, 11, 18, 0.5);
+  height: 90px;
+  width: calc(100vw - 225px);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
 
 /* *********************************FOOTER********************************* */
 
-
+footer{
+  height: 90px;
+  background-color: #282828;
+}
 
 
 
