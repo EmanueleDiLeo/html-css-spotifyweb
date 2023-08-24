@@ -274,4 +274,39 @@ footer{
   background-color: #282828;
 }
 
+.bot-container{
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bot-center{
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.bot-left{
+  padding-left: 20px;
+  align-items: center;
+}
+
+.img-play img{
+  width: 45px;
+}
+
+.img-play{
+  padding-right: 10px;
+}
+
+.text-play{
+  padding-right: 30px;
+}
+
+.bot-left i{
+  color: #6a6c71;
+  font-size: 1.2rem;
+  padding-left: 10px;
+}
+
 /* ************************************RESPONSIVE*************************** */
