@@ -184,6 +184,24 @@ main{
   z-index: 999;
 }
 
+.bar-top a{
+  position: absolute;
+  right: 20px;
+  top:25px;
+  text-decoration: none;
+  color: white;
+  padding: 10px 30px;
+  border: 1px white solid;
+  border-radius: 40px;
+}
+
+.bar-top a:hover{
+  top: 20px;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+}
+
+
 /* **************************************CENTRAL_BODY */
 
 .central-body{
@@ -307,6 +325,10 @@ footer{
   color: #6a6c71;
   font-size: 1.2rem;
   padding-left: 10px;
+}
+
+footer i:hover{
+  color: white;
 }
 
 /* ************************************RESPONSIVE*************************** */
