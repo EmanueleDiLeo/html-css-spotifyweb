@@ -40,15 +40,24 @@ span{
 
 .flex{
   display: flex;
+}
+
+.f-wrap{
   flex-wrap: wrap;
 }
+
+.direction-col{
+  flex-direction: column;
+}
+
+
 
 /* **********************************MAIN********************************** */
 
 main{
   height: calc(100vh - 90px);
   background-color: #141922;
-  display: flex;
+  overflow: hidden;
 }
 
 /* ******************************************Bar-left **************/
@@ -93,11 +102,9 @@ main{
 .playlist{
   height: calc(100% - 90px - 210px);
   padding: 20px 0 0 20px;
-  overflow-y: auto;
 }
 
 .center{
-  display: flex;
   align-items: center;
   cursor: pointer;
 }
@@ -147,7 +154,6 @@ main{
 }
 
 .name{
-  display: flex;
   align-items: center;
   padding: 10px 0px;
 }
@@ -202,9 +208,32 @@ main{
   border: 2px solid #adff2f;
   margin-top: 8px;
   margin-left:30px;
-
-  
 }
+
+.container{
+  padding: 20px 0px 20px 20px;
+}
+
+.card-img img{
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.card-img{
+  padding-bottom: 20px;
+}
+
+.card{
+  flex-direction: column;
+  text-align: center;
+  width: calc(100vw / 6 - 65px);
+}
+
+.col{
+  padding: 20px 20px 20px 0;
+}
+
+
 
 /* *********************************FOOTER********************************* */
 
