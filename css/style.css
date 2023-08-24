@@ -175,7 +175,7 @@ main{
 /* *****************************************BAR-TOP */
 
 .bar-top{
-  background-color: rgb(16, 22, 36, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   width: calc(100vw - 225px);
   height: 90px;
   position:fixed;
@@ -211,7 +211,12 @@ main{
 }
 
 .container{
-  padding: 20px 0px 20px 20px;
+  padding: 0px 0px 20px 20px;
+}
+
+.container h2{
+  padding-top: 40px;
+  padding-bottom: 10px;
 }
 
 .card-img img{
@@ -220,19 +225,46 @@ main{
 }
 
 .card-img{
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 .card{
   flex-direction: column;
   text-align: center;
   width: calc(100vw / 6 - 65px);
+  cursor: pointer;
 }
 
 .col{
   padding: 20px 20px 20px 0;
 }
 
+.img-circle{
+  border-radius: 50%;
+}
+
+.hidden-play{
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 11;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7) ;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden-play .fa-circle-play{
+  color: white;
+  font-size: 5rem;
+}
+
+.card:hover .hidden-play{
+  display: flex;
+}
 
 
 /* *********************************FOOTER********************************* */
@@ -241,7 +273,5 @@ footer{
   height: 90px;
   background-color: #282828;
 }
-
-
 
 /* ************************************RESPONSIVE*************************** */
