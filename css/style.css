@@ -299,12 +299,16 @@ footer{
 }
 
 .bot-center{
+  height: 90px;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   width: 40%;
 }
 
 .bot-left{
+  height: 100%;
+  width: 270px;
   padding-left: 20px;
   align-items: center;
 }
@@ -329,6 +333,89 @@ footer{
 
 footer i:hover{
   color: white;
+}
+
+.text-play span:hover{
+  color: white;
+  border-bottom: 1px white solid;
+}
+
+.bot-center-top i{
+  height: 50%;
+  padding: 0 10px 0 10px;
+}
+
+.bot-center-top .fa-circle-play{
+  padding: 0 20px 0 20px;
+  font-size: 1.5rem;
+}
+
+.music{
+  padding-top: 10px;
+  height: 50%;
+}
+
+.bar-music{
+  display: inline;
+  height: 3px;
+  /* width: calc(100vw); */
+}
+
+.music span{
+  font-size: 0.6rem;
+  color: white;
+}
+
+.bot-center-top i,
+.bot-right i
+{
+ color: white;
+}
+
+.bot-right{
+  height: 100%;
+  width: 230px;
+  padding-right: 20px;
+  align-items: center;
+}
+
+.bot-right i{
+  font-size: 0.9rem;
+  padding-right: 10px;
+}
+
+.all-volume{
+  position: relative;
+  height: 3px;
+  width: 120px;
+  background-color: #6a6c71;
+  border-radius: 3px;
+}
+
+.volume{
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.all-volume:hover .volume{
+  background-color: #adff2f;
+}
+
+footer .fa-circle{
+  display: none;
+  position: absolute;
+  bottom: -5px;
+  left: 18px;
+  
+}
+
+.all-volume:hover .fa-circle{
+  color: #adff2f;
+  display: inline-block;
 }
 
 /* ************************************RESPONSIVE*************************** */
