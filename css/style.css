@@ -224,8 +224,7 @@ main{
   position: relative;
   width: 40%;
   border: 2px solid #adff2f;
-  margin-top: 8px;
-  margin-left:30px;
+  margin: 8px auto;
 }
 
 .container{
@@ -353,8 +352,12 @@ footer i:hover{
 }
 
 .bot-center .fa-circle-play:hover{
-  font-size: 1.6rem;
-  /* padding: 0 19px 0px 19px; */
+  transform: scale(1.2);
+}
+
+.bot-center ul{
+  height: 100%;
+  align-items: center;
 }
 
 .music{
@@ -388,10 +391,8 @@ footer i:hover{
   display: none;
   position: absolute;
   bottom: -5px;
-  left: 85%;
+  right: -9px;
 }
-
-
 
 .music span{
   font-size: 0.6rem;
@@ -455,3 +456,12 @@ footer i:hover{
 }
 
 /* ************************************RESPONSIVE*************************** */
+
+
+/* 
+1100- le card diventano 4
+700- le card diventano 2
+600- cambia la barra a sinistra 
+(fino a 500 deve funzionare)
+ */
+
