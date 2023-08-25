@@ -290,6 +290,7 @@ main{
 footer{
   height: 90px;
   background-color: #282828;
+  width: 100vw;
 }
 
 .bot-container{
@@ -304,6 +305,7 @@ footer{
   justify-content: center;
   flex-direction: column;
   width: 40%;
+  flex-grow: 2;
 }
 
 .bot-left{
@@ -346,20 +348,50 @@ footer i:hover{
 }
 
 .bot-center-top .fa-circle-play{
-  padding: 0 20px 0 20px;
+  padding: 0 20px 2px 20px;
   font-size: 1.5rem;
 }
 
+.bot-center .fa-circle-play:hover{
+  font-size: 1.6rem;
+  /* padding: 0 19px 0px 19px; */
+}
+
 .music{
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   padding-top: 10px;
   height: 50%;
 }
 
 .bar-music{
   display: inline;
+  position: relative;
   height: 3px;
-  /* width: calc(100vw); */
+  width: 50%;
+  background-color: #6a6c71;
+  margin: 0px 10px;
+  border-radius: 3px;
 }
+
+.time{
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 10%;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.bot-center .fa-circle{
+  display: none;
+  position: absolute;
+  bottom: -5px;
+  left: 85%;
+}
+
+
 
 .music span{
   font-size: 0.6rem;
@@ -401,11 +433,15 @@ footer i:hover{
   border-radius: 3px;
 }
 
-.all-volume:hover .volume{
+/* .all-volume:hover .bg-hover{
+  background-color: #adff2f;
+} */
+
+.bar-hover:hover .bg-hover{
   background-color: #adff2f;
 }
 
-footer .fa-circle{
+.bot-right .fa-circle{
   display: none;
   position: absolute;
   bottom: -5px;
@@ -413,7 +449,7 @@ footer .fa-circle{
   
 }
 
-.all-volume:hover .fa-circle{
+.bar-hover:hover .fa-circle{
   color: #adff2f;
   display: inline-block;
 }
