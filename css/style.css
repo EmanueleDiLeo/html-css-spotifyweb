@@ -1,10 +1,17 @@
 /* **************************************GENERAL**************************** */
 
+:root{
+  --lightgreen:#adff2f;
+}
+
+
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 
 body{
   font-family: 'Montserrat', sans-serif;
@@ -249,12 +256,12 @@ main{
 .card{
   flex-direction: column;
   text-align: center;
-  width: calc(100vw / 6 - 65px);
   cursor: pointer;
 }
 
 .col{
   padding: 20px 20px 20px 0;
+  width: calc(100% / 6 - 5px);
 }
 
 .img-circle{
@@ -289,7 +296,11 @@ main{
 footer{
   height: 90px;
   background-color: #282828;
-  width: 100vw;
+  width: 100%;
+}
+
+footer i{
+  font-size: 0.8rem;
 }
 
 .bot-container{
@@ -298,20 +309,14 @@ footer{
   justify-content: space-between;
 }
 
-.bot-center{
-  height: 90px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 40%;
-  flex-grow: 2;
-}
+/* ***************************************BOT LEFT */
 
 .bot-left{
   height: 100%;
-  width: 270px;
-  padding-left: 20px;
+  width: 215px;
+  padding-left: 10px;
   align-items: center;
+  font-size: 0.7rem;
 }
 
 .img-play img{
@@ -323,12 +328,11 @@ footer{
 }
 
 .text-play{
-  padding-right: 30px;
+  padding-right: 15px;
 }
 
 .bot-left i{
   color: #6a6c71;
-  font-size: 1.2rem;
   padding-left: 10px;
 }
 
@@ -339,6 +343,17 @@ footer i:hover{
 .text-play span:hover{
   color: white;
   border-bottom: 1px white solid;
+}
+
+/* **********************************BOT CENTER */
+
+.bot-center{
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+  flex-grow: 2;
 }
 
 .bot-center-top i{
@@ -407,13 +422,12 @@ footer i:hover{
 
 .bot-right{
   height: 100%;
-  width: 230px;
+  width: 200px;
   padding-right: 20px;
   align-items: center;
 }
 
 .bot-right i{
-  font-size: 0.9rem;
   padding-right: 10px;
 }
 
@@ -434,9 +448,6 @@ footer i:hover{
   border-radius: 3px;
 }
 
-/* .all-volume:hover .bg-hover{
-  background-color: #adff2f;
-} */
 
 .bar-hover:hover .bg-hover{
   background-color: #adff2f;
@@ -451,7 +462,6 @@ footer i:hover{
 }
 
 .bar-hover:hover .fa-circle{
-  color: #adff2f;
   display: inline-block;
 }
 
@@ -464,4 +474,16 @@ footer i:hover{
 600- cambia la barra a sinistra 
 (fino a 500 deve funzionare)
  */
+
+@media screen and (max-width:1099px){
+  .col{
+    width: calc(100% / 4 - 5px);
+  }
+}
+
+@media screen and (max-width:699px){
+  .col{
+    width: calc(100% / 2 - 5px);
+  }
+}
 
