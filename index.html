@@ -26,20 +26,30 @@
 
       <!-- Menu -->
       <div class="menu debug">
-        <img class="logo" src="img/logo.svg" alt="logo">
+        <img class="logo desktop" src="img/logo.svg" alt="logo">
+        <img class="display-logo" src="img/logo-small.svg" alt="logo-small">
 
         <!-- home -->
         <div class="home">
           <ul>
-            <li><img src="img/home.svg" alt="home">Home</li>
-            <li><img src="img/search.svg" alt="cerca"> Cerca</li>
-            <li><img src="img/libreria.svg" alt="libreria">La tua libreria</li>
+            <li class="home-active">
+              <img src="img/home.svg" alt="home">
+              <span class="desktop">Home</span>
+            </li>
+            <li>
+              <img src="img/search.svg" alt="cerca"> 
+              <span class="desktop">Cerca</span>
+            </li>
+            <li>
+              <img src="img/libreria.svg" alt="libreria">
+              <span class="desktop">La tua libreria</span>
+            </li>
           </ul>
         </div>
       </div>
 
         <!-- playlist -->
-      <div class="playlist overflow-y debug">
+      <div class="playlist overflow-y desktop debug">
         <h4>PLAYLIST</h4>
         <div class="center flex">
           <div class="plus">
@@ -47,7 +57,7 @@
           </div>
           <span class="create hw">Crea Playlist</span>
         </div>
-        <div class="">
+        <div>
           <ul>
             <li>Nome Playlist</li>
             <li>Nome Playlist</li>
@@ -64,12 +74,14 @@
       <div class="profile debug">
         <div class="app">
           <img src="img/download.svg" alt="download">
-          <span class="hw">Installa app</span>
+          <span class="hw desktop">Installa app</span>
         </div>
-        <hr>
+        <hr class="desktop">
         <div class="name flex">
-          <img src="img/profile.svg" alt="profile">
-          <h4>John Doe</h4>
+          <div class="profile-img">
+            <img src="img/profile.svg" alt="profile">
+          </div>
+          <h4 class="desktop">John Doe</h4>
         </div>
       </div>
 

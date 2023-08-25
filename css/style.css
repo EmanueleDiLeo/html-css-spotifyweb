@@ -72,8 +72,9 @@ main{
   height: calc(100vh - 90px);
   width: 225px;
   background-color: black;
-
 }
+
+
 
 /* **************************************** Menu */
 .menu{
@@ -89,6 +90,13 @@ main{
   width: 130px;
 }
 
+.display-logo{
+  margin: 10px;
+  display: none;
+  width: 25px;
+}
+
+
 .menu .home img{
   margin-right: 10px;
   width: 20px;
@@ -97,9 +105,10 @@ main{
 .home li{
   padding-left: 20px;
   display:block;
+  border-left: 3px black solid;
 }
 
-.home ul li:first-child{
+li.home-active{
   border-left: 3px  #adff2f solid;
   color:white;
 }
@@ -149,11 +158,10 @@ main{
 .profile{
   height: 90px;
   padding:0 20px;
-
 }
 
 .app{
-  padding:10px 0px;
+  padding:10px 0;
 }
 
 .app img{
@@ -165,12 +173,17 @@ main{
   padding: 10px 0px;
 }
 
-.name img{
+.name .profile-img{
+  text-align: center;
   width: 25px;
   height: 25px;
   background-color: #6a6c71;
   border-radius: 50%;
   margin-right: 10px;
+}
+
+.name .profile-img img{
+  height: 20px;
 }
 
 /* ********************************************* BAR-RIGHT************/
@@ -299,8 +312,8 @@ footer{
   width: 100%;
 }
 
-footer i{
-  font-size: 0.8rem;
+ footer{
+  font-size: 0.7rem;
 }
 
 .bot-container{
@@ -316,7 +329,6 @@ footer i{
   width: 215px;
   padding-left: 10px;
   align-items: center;
-  font-size: 0.7rem;
 }
 
 .img-play img{
@@ -362,8 +374,8 @@ footer i:hover{
 }
 
 .bot-center-top .fa-circle-play{
-  padding: 0 20px 2px 20px;
-  font-size: 1.5rem;
+  padding: 0 15px 2px 15px;
+  font-size: 1.2rem;
 }
 
 .bot-center .fa-circle-play:hover{
@@ -458,7 +470,6 @@ footer i:hover{
   position: absolute;
   bottom: -5px;
   left: 18px;
-  
 }
 
 .bar-hover:hover .fa-circle{
@@ -472,18 +483,65 @@ footer i:hover{
 1100- le card diventano 4
 700- le card diventano 2
 600- cambia la barra a sinistra 
-(fino a 500 deve funzionare)
+
+ funziona fino a 542px
  */
 
+
+/* *************************************** DA 1099 */
 @media screen and (max-width:1099px){
   .col{
     width: calc(100% / 4 - 5px);
   }
 }
 
+/* ************************************** DA 699 */
 @media screen and (max-width:699px){
   .col{
     width: calc(100% / 2 - 5px);
   }
 }
 
+/* *************************************** DA 599 */
+@media screen and (max-width:599px){
+  .desktop{
+    display: none;
+  }
+
+  #bar-left{
+    width: 50px;
+  }
+
+  .menu{
+    height: calc(100% - 90px);
+  }
+
+  #bar-right{
+    width: calc(100% - 50px);
+  }
+
+  .bar-top{
+    width: calc(100% - 50px);
+  }
+
+  .profile{
+    padding:0 10px;
+  }
+
+  .name .profile-img{
+    margin-right: 0px;
+  }
+
+  .app{
+    padding:10px 7px;
+  }
+
+  .display-logo{
+    display: block;
+  }
+
+  .home li{
+    padding-left: 12px;
+  }
+
+}
