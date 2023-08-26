@@ -18,18 +18,16 @@
 
   <!-- ---------------------------------------START MAIN ----------------->
   <main class="flex">
-    
-
 
     <!-- START BAR-LEFT -->
-    <section id="bar-left" class="">
+    <section id="bar-left">
 
-      <!-- Menu -->
-      <div class="menu debug">
+      <!-- START MENU -->
+      <div class="menu">
         <img class="logo desktop" src="img/logo.svg" alt="logo">
         <img class="display-logo" src="img/logo-small.svg" alt="logo-small">
 
-        <!-- home -->
+        <!-- START HOME -->
         <div class="home">
           <ul>
             <li class="home-active">
@@ -46,10 +44,13 @@
             </li>
           </ul>
         </div>
-      </div>
+        <!-- END HOME -->
 
-        <!-- playlist -->
-      <div class="playlist overflow-y desktop debug">
+      </div>
+      <!-- END MENU -->
+
+        <!-- START PLAYLIST -->
+      <div class="playlist overflow-y desktop">
         <h4>PLAYLIST</h4>
         <div class="center flex">
           <div class="plus">
@@ -69,9 +70,10 @@
           </ul>
         </div>
       </div>
+      <!-- END PLAYLIST -->
 
-      <!-- Profilo -->
-      <div class="profile debug">
+      <!-- START PROFILE -->
+      <div class="profile">
         <div class="app">
           <img src="img/download.svg" alt="download">
           <span class="hw desktop">Installa app</span>
@@ -84,26 +86,28 @@
           <h4 class="desktop">John Doe</h4>
         </div>
       </div>
+      <!-- END PROFILE -->
 
     </section>
     <!-- END BAR LEFT-->
 
 
-
     <!-- START BAR-RIGHT -->
-    <section id="bar-right" class="">
+    <section id="bar-right">
 
       <!-- START BAR TOP -->
-      <div class="bar-top debug">
+      <div class="bar-top">
         <a href="#">EFFETTUA L'UPGRADE</a>
       </div>
       <!-- END BAR TOP -->
 
       <!-- START CENTRAL BODY -->
       <div class="central-body overflow-y">
+
+        <!-- START LIST CATEGORIES-->
         <div>
           <ul class="flex f-wrap categories">
-            <li>IN EVIDENZA</li>
+            <li class="categories-active">IN EVIDENZA</li>
             <li>PODCAST</li>
             <li>CLASSIFICHE</li>
             <li>GENERI E MOOD</li>
@@ -111,13 +115,16 @@
             <li>SCOPRI</li>
           </ul>
         </div>
+        <!-- END LIST CATEGORIES-->
 
+        <!-- START CONTAINER -->
         <div class="container">
           <h2>Recently player</h2>
 
-
+          <!-- START ROW RECENTLY -->
           <div class="row flex f-wrap">
 
+            <!-- START COL-->
             <div class="col">
               <div class="card flex">
                 <div class="card-img">
@@ -132,7 +139,9 @@
                 </div>
               </div>
             </div>
+            <!-- END COL-->
 
+            <!-- START COL-->
             <div class="col">
               <div class="card">
                 <div class="card-img">
@@ -146,8 +155,9 @@
                   <span>Kyle Dixon & Michael Stein</span>
                 </div>
               </div>
-            </div>
+            </div><!-- END COL-->
 
+            <!-- START COL-->
             <div class="col">
               <div class="card">
                 <div class="card-img">
@@ -162,7 +172,9 @@
                 </div>
               </div>
             </div>
+            <!-- END COL-->
 
+            <!-- START COL-->
             <div class="col">
               <div class="card">
                 <div class="card-img">
@@ -177,7 +189,9 @@
                 </div>
               </div>
             </div>
+            <!-- END COL-->
 
+            <!-- START COL-->
             <div class="col">
               <div class="card">
                 <div class="card-img">
@@ -192,7 +206,9 @@
                 </div>
               </div>
             </div>
+            <!-- END COL-->
 
+            <!-- START COL-->
             <div class="col">
               <div class="card">
                 <div class="card-img">
@@ -207,14 +223,18 @@
                 </div>
               </div>
             </div>
+            <!-- END COL -->
 
           </div>
-          <!-- END ROW -->
+          <!-- END ROW RECENTLY-->
 
           <h2>Creato per John Don</h2>
           <span>Più ascolti, più accurati saranno i suggerimenti.</span>
+
+          <!-- START ROW FOR YOU-->
           <div class="row flex f-wrap">
 
+            <!-- START COL-->
             <div class="col">
               <div class="card flex">
                 <div class="card-img">
@@ -228,7 +248,9 @@
                 </div>
               </div>
             </div>
+            <!-- END COL-->
 
+            <!-- START COL-->
             <div class="col">
               <div class="card">
                 <div class="card-img">
@@ -242,14 +264,18 @@
                 </div>
               </div>
             </div>
+            <!-- END COL-->
 
           </div>
-          <!-- END ROW -->
+          <!-- END ROW FOR YOU-->
 
           <h2>Artisti più popolari</h2>
           <span>Più ascolti, più accurati saranno i suggerimenti.</span>
+
+          <!-- START ROW POPULAR-->
           <div class="row flex f-wrap">
 
+            <!-- START COL-->
             <div class="col">
               <div class="card flex">
                 <div class="card-img">
@@ -263,7 +289,9 @@
                 </div>
               </div>
             </div>
+            <!-- END COL-->
 
+            <!-- START COL-->
             <div class="col">
               <div class="card">
                 <div class="card-img">
@@ -277,26 +305,21 @@
                 </div>
               </div>
             </div>
+            <!-- END COL-->
 
           </div>
-          <!-- END ROW -->
+          <!-- END ROW POPULAR-->
 
         </div>
+        <!-- END CONTAINER-->
       </div>
       <!-- END CENTRAL BODY -->
 
     </section>
     <!-- END BAR-RIGHT -->
 
-    
-
-
   </main>
   <!-- --------------------------------------END MAIN------------------ -->
-
-
-
-
 
 
 
@@ -305,7 +328,7 @@
     <div class="bot-container flex">
 
       <!-- START BOT-BAR LEFT -->
-      <div class="bot-left flex debug">
+      <div class="bot-left flex">
         <div class="img-play">
           <img src="img/sinister.jpeg" alt="sinister">
         </div>
@@ -321,15 +344,15 @@
       <!-- END BOT-BAR LEFT -->
 
       <!-- START BOT-BAR CENTER -->
-      <div class="bot-center flex debug">
+      <div class="bot-center flex">
         <div class="bot-center-top">
-            <ul class="flex">
-              <li><i class="fa-solid fa-shuffle"></i></li>
-              <li><i class="fa-solid fa-backward-step"></i></li>
-              <li><i class="fa-regular fa-circle-play"></i></li>
-              <li><i class="fa-solid fa-forward-step"></i></li>
-              <li><i class="fa-solid fa-arrow-rotate-right"></i></li>
-            </ul>
+          <ul class="flex">
+            <li><i class="fa-solid fa-shuffle"></i></li>
+            <li><i class="fa-solid fa-backward-step"></i></li>
+            <li><i class="fa-regular fa-circle-play"></i></li>
+            <li><i class="fa-solid fa-forward-step"></i></li>
+            <li><i class="fa-solid fa-arrow-rotate-right"></i></li>
+          </ul>
         </div>
         <div class="music flex">
           <span>0:25</span>
@@ -344,7 +367,7 @@
       <!-- END BOT-BAR CENTER -->
   
       <!-- START BOT-BAR RIGHT -->
-      <div class="bot-right flex debug">
+      <div class="bot-right flex">
         <ul class="flex">
           <li><i class="fa-solid fa-list-ul"></i></li>
           <li><i class="fa-solid fa-display"></i></li>
