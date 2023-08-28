@@ -67,6 +67,11 @@ main{
   background-color: black;
 }
 
+li:hover .hw,
+.center:hover .create{
+  color: white;
+}
+
 /* **************************************** Menu */
 .menu{
   height: 210px;
@@ -77,12 +82,12 @@ main{
 }
 
 .logo{
-  margin: 20px;
+  margin: 20px 17px;
   width: 130px;
 }
 
 .display-logo{
-  margin: 10px;
+  margin: 13px;
   display: none;
   width: 25px;
 }
@@ -98,6 +103,10 @@ main{
   border-left: 3px black solid;
 }
 
+li.home-active span{
+  color:white
+}
+
 li.home-active{
   border-left: 3px #adff2f solid;
   color:white;
@@ -106,7 +115,7 @@ li.home-active{
 /* ****************************************Playlist */
  
 .playlist{
-  height: calc(100% - 90px - 210px);
+  height: 90px;
   padding: 20px 0 0 20px;
 }
 
@@ -134,13 +143,17 @@ li.home-active{
   color:black;
 }
 
-.center:hover .plus{
-  background-color: white;
+.all-playlist{
+  height: calc(100% - 90px - 210px - 90px);
+  padding: 20px 0 0 20px;
 }
 
-.center:hover .hw,
-.app:hover .hw{
-  color: white;
+.all-playlist li{
+  padding-bottom: 8px;
+}
+
+.center:hover .plus{
+  background-color: white;
 }
 
 /***************************************** Profile  */
@@ -403,6 +416,7 @@ footer i:hover{
   background-color: #6a6c71;
   margin: 0px 10px;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .time{
@@ -454,6 +468,7 @@ footer .fa-circle{
   width: 120px;
   background-color: #6a6c71;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .volume{
